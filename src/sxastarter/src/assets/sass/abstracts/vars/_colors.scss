@@ -2,34 +2,34 @@
 .site-financial {
   --text-body: #333;
   --text-body-inverted: #fff;
-  --text-colored: #034c81;
+  --text-colored: #0071BB; /* Henry Schein Blue */
   --text-footer: #fff;
-  --text-accent: #a82a39;
+  --text-accent: #EC1C23; /* Henry Schein Red */
   --bg-body: #fff;
   --bg-footer: #333;
-  --bg-main: #f0f5f7;
-  --bg-main-alt: #f0f5f7;
-  --bg-color: #c5e4f3;
-  --bg-saturated: #034c81;
-  --bg-accent: #c03021;
-  --border-color: #f0f5f7;
+  --bg-main: #F5F9FD; /* Light blue-gray for subtle contrast */
+  --bg-main-alt: #F5F9FD;
+  --bg-color: #E6F0FA; /* Lighter blue for backgrounds */
+  --bg-saturated: #0071BB; /* Henry Schein Blue for saturated elements */
+  --bg-accent: #EC1C23; /* Henry Schein Red for accents */
+  --border-color: #E6F0FA; /* Light blue for borders */
   --hr-color: #fff;
   --roundness: 1rem;
 
   .dark & {
     --text-body: #fff;
     --text-body-inverted: #333;
-    --text-colored: #c5e4f3;
+    --text-colored: #E6F0FA; /* Lighter blue for dark mode */
     --text-footer: #fff;
-    --text-accent: #a82a39;
-    --bg-body: #031827;
+    --text-accent: #EC1C23; /* Henry Schein Red */
+    --bg-body: #1A252F; /* Dark gray-blue for dark mode */
     --bg-footer: #333;
-    --bg-main: #034c81;
-    --bg-main-alt: #031827;
-    --bg-color: #034c81;
-    --bg-saturated: #034c81;
-    --bg-accent: #c03021;
-    --border-color: #034c81;
+    --bg-main: #0071BB; /* Henry Schein Blue */
+    --bg-main-alt: #1A252F;
+    --bg-color: #0071BB; /* Henry Schein Blue */
+    --bg-saturated: #0071BB; /* Henry Schein Blue */
+    --bg-accent: #EC1C23; /* Henry Schein Red */
+    --border-color: #0071BB; /* Henry Schein Blue */
     --hr-color: #fff;
     --roundness: 1rem;
   }
@@ -37,34 +37,34 @@
 
 // Services
 .site-services {
-  --text-body: #391400;
+  --text-body: #333; /* Neutral dark for readability */
   --text-body-inverted: #fff;
-  --text-colored: #ff7145;
-  --text-footer: #391400;
-  --text-accent: #ff7145;
-  --bg-body: #fdf0e9;
-  --bg-footer: #fdf0e9;
-  --bg-main: #fdf0e9;
-  --bg-color: #ff7145;
-  --bg-saturated: #ff7145;
-  --bg-accent: #ff7145;
-  --border-color: #a99185;
+  --text-colored: #0071BB; /* Henry Schein Blue */
+  --text-footer: #333;
+  --text-accent: #EC1C23; /* Henry Schein Red */
+  --bg-body: #fff;
+  --bg-footer: #F5F9FD; /* Light blue-gray for footer */
+  --bg-main: #F5F9FD; /* Light blue-gray for main areas */
+  --bg-color: #E6F0FA; /* Lighter blue for backgrounds */
+  --bg-saturated: #0071BB; /* Henry Schein Blue */
+  --bg-accent: #EC1C23; /* Henry Schein Red */
+  --border-color: #E6F0FA; /* Light blue for borders */
   --hr-color: #fff;
   --roundness: 0.375rem;
 
   .dark & {
     --text-body: #fff;
-    --text-body-inverted: #391400;
-    --text-colored: #ff7145;
+    --text-body-inverted: #333;
+    --text-colored: #E6F0FA; /* Lighter blue for dark mode */
     --text-footer: #fff;
-    --text-accent: #ff7145;
-    --bg-body: #29314f;
-    --bg-footer: #29314f;
-    --bg-main: #29314f;
-    --bg-color: #ff7145;
-    --bg-saturated: #ff7145;
-    --bg-accent: #ff7145;
-    --border-color: #5d5f7f;
+    --text-accent: #EC1C23; /* Henry Schein Red */
+    --bg-body: #1A252F; /* Dark gray-blue for dark mode */
+    --bg-footer: #1A252F;
+    --bg-main: #1A252F;
+    --bg-color: #0071BB; /* Henry Schein Blue */
+    --bg-saturated: #0071BB; /* Henry Schein Blue */
+    --bg-accent: #EC1C23; /* Henry Schein Red */
+    --border-color: #0071BB; /* Henry Schein Blue */
     --hr-color: #fff;
     --roundness: 0.375rem;
   }
@@ -74,35 +74,35 @@
 $bg-transparent: transparent !default;
 $bg-basic-color: var(--bg-body) !default;
 $bg-basic-color-active: var(--bg-main) !default;
-$bg-light-gray: #f7f7f7 !default;
-$bg-light-gray-active: #dadada !default;
-$bg-blue: var(--bg-color);
-$bg-blue-active: var(--bg-saturated) !default;
-$bg-submenu: #edebeb !default;
-$bg-submenu-active: #f6f6f6 !default;
+$bg-light-gray: #F5F9FD !default; /* Updated to light blue-gray */
+$bg-light-gray-active: #E6F0FA !default; /* Lighter blue */
+$bg-blue: var(--bg-color); /* Henry Schein Blue-based */
+$bg-blue-active: var(--bg-saturated) !default; /* Henry Schein Blue */
+$bg-submenu: #F5F9FD !default; /* Light blue-gray for submenus */
+$bg-submenu-active: #E6F0FA !default; /* Lighter blue */
 $bg-black: #000;
-$bg-black-active: #3d3d3d;
-$bg-dark-gray: #262626;
+$bg-black-active: #1A252F; /* Dark gray-blue for dark mode */
+$bg-dark-gray: #333;
 
 // Text colors
 $text-white: #fff !default;
 $text-heading-color: var(--text-body) !default;
 $text-basic: var(--text-body) !default;
-$text-basic-active: #878787 !default;
-$text-blue: var(--bg-color) !default;
-$text-blue-active: var(--bg-saturated) !default;
-$text-submenu-active: #222 !default;
+$text-basic-active: #666 !default; /* Slightly lighter for active states */
+$text-blue: var(--bg-color) !default; /* Henry Schein Blue-based */
+$text-blue-active: var(--bg-saturated) !default; /* Henry Schein Blue */
+$text-submenu-active: #333 !default;
 $text-disabled: #aaa !default;
 $text-black: #000 !default;
-$text-red: var(--text-accent);
-$text-gray: #262626;
+$text-red: var(--text-accent); /* Henry Schein Red */
+$text-gray: #333;
 
 // Border colors
-$border-gray: #d2d2d2 !default;
+$border-gray: #E6F0FA !default; /* Light blue for borders */
 $border-white: #fff !default;
-$border-basic-color: var(--bg-color) !default;
-$border-basic-active: var(--bg-saturated) !default;
-$border-nav-submenu: #e1e1e1;
+$border-basic-color: var(--bg-color) !default; /* Henry Schein Blue-based */
+$border-basic-active: var(--bg-saturated) !default; /* Henry Schein Blue */
+$border-nav-submenu: #E6F0FA; /* Light blue for submenu borders */
 
 // Styles for each component separately
 // Accordion
@@ -120,17 +120,17 @@ $breadcrumb-color: $text-basic;
 $breadcrumb-color-active: $text-blue-active;
 
 // Buttons colors
-$btn-green-light: #a0ce4e;
-$btn-green: #92be43;
-$btn-red-active: var(--text-accent);
-$btn-red: var(--bg-accent);
+$btn-green-light: #a0ce4e; /* Kept as is, no Henry Schein green */
+$btn-green: #92be43; /* Kept as is */
+$btn-red-active: var(--text-accent); /* Henry Schein Red */
+$btn-red: var(--bg-accent); /* Henry Schein Red */
 
 // Carousel
 $carousel-bg: $bg-basic-color;
 $carousel-nav: $text-black;
 $carousel-nav-active: $text-basic-active;
 $carousel-nav-border: $border-basic-color;
-$carousel-indicator-active-bg: var(--text-colored);
+$carousel-indicator-active-bg: var(--text-colored); /* Henry Schein Blue */
 
 // Container component
 $container-title-row-bg: $bg-light-gray;
@@ -155,7 +155,7 @@ $feed-item-bg: transparent;
 $field-editor-bg: transparent;
 $field-editor-table-border: $bg-light-gray;
 $field-editor-text-header: $text-black;
-$field-editor-text-header-active: $text-red;
+$field-editor-text-header-active: $text-red; /* Henry Schein Red */
 $field-editor-text: $text-basic;
 
 // File List
@@ -169,14 +169,14 @@ $file-list-item-size: $text-basic;
 $file-list-item-borer: $border-basic-color;
 $file-list-link-btn-color-active: $text-white;
 $file-list-link-btn-color: $text-basic;
-$file-list-link-btn-bg: $bg-blue-active;
+$file-list-link-btn-bg: $bg-blue-active; /* Henry Schein Blue */
 $file-list-link-btn-bg-active: $bg-blue;
 
 // Flip
 $flip-bg: transparent;
 $flip-slides-bg: $bg-basic-color;
-$flip-slides0-bg: #f6f6f6;
-$flip-slides1-bg: $bg-blue-active;
+$flip-slides0-bg: #F5F9FD; /* Light blue-gray */
+$flip-slides1-bg: $bg-blue-active; /* Henry Schein Blue */
 $flip-slides1-color: $text-white;
 $flip-border: $border-gray;
 
@@ -229,9 +229,9 @@ $page-list-item-border: $border-basic-color;
 
 // Pagination
 $list-pagination-bg: transparent;
-$list-pagination-active-bg: $bg-blue;
+$list-pagination-active-bg: $bg-blue; /* Henry Schein Blue */
 $list-pagination-active-color: $text-white;
-$list-pagination-active-color: $text-blue;
+$list-pagination-active-color: $text-blue; /* Henry Schein Blue */
 $list-pagination-active-bg: $bg-submenu-active;
 $list-pagination-active-border: $border-basic-active;
 
@@ -240,15 +240,15 @@ $play-list-bg: transparent;
 $play-list-item-bg: transparent;
 $play-list-item-color: $text-basic;
 $play-list-item-color-active: $text-white;
-$play-list-nav-active: $text-blue;
+$play-list-nav-active: $text-blue; /* Henry Schein Blue */
 $play-list-item-bg: $bg-light-gray;
-$play-list-item-active-bg: $bg-blue;
+$play-list-item-active-bg: $bg-blue; /* Henry Schein Blue */
 $play-list-border: $border-basic-color;
 $play-list-title-border: $border-basic-color;
 
 // Promo
 $promo-bg: $bg-basic-color;
-$promo-bg-hero: rgb(0 0 0 / 50%);
+$promo-bg-hero: rgba(0, 113, 187, 0.5); /* Henry Schein Blue with opacity */
 $promo-border: $border-gray;
 $promo-hero-text-color: $text-white;
 $promo-shadow-border: $border-basic-color;
@@ -257,7 +257,7 @@ $promo-shadow-border: $border-basic-color;
 $rich-content-bg: transparent;
 $rich-content-color: $text-basic;
 $rich-content-border: transparent;
-$rich-content-link-color: $text-red;
+$rich-content-link-color: $text-red; /* Henry Schein Red */
 $rich-content-link-color-active: $text-basic-active;
 
 // Search
@@ -265,8 +265,8 @@ $search-filter: $text-basic;
 $search-filter-border: $border-basic-color;
 
 // Menu colors
-$menu-hover-color: var(--text-colored);
-$menu-active-color: var(--text-colored);
+$menu-hover-color: var(--text-colored); /* Henry Schein Blue */
+$menu-active-color: var(--text-colored); /* Henry Schein Blue */
 
 // Navigation
 $nav-bg: transparent;
@@ -306,8 +306,8 @@ $toggle-show-color: $text-basic-active;
 
 // Search Components
 $search-btn-bg: transparent;
-$search-btn-active-bg: #e0e0e0;
-$search-btn-active-border: #adadad;
+$search-btn-active-bg: #E6F0FA; /* Light blue */
+$search-btn-active-border: #0071BB; /* Henry Schein Blue */
 
 // Image component
 $image-caption-color: $text-basic;
@@ -322,7 +322,7 @@ $media-link-color-active: $text-basic-active;
 $tag-color: $text-basic;
 $tag-color-active: $text-basic-active;
 $tag-border-active: $border-basic-active;
-$tag-link-bg: $bg-blue;
+$tag-link-bg: $bg-blue; /* Henry Schein Blue */
 $tag-link-bg-active: $bg-blue-active;
 $tag-link-color: $text-white;
 
@@ -351,37 +351,37 @@ $search-facet-summary-item-color-horizontal: $text-basic;
 $search-facet-summary-item-border: $border-gray;
 $search-facet-summary-item-border-horizontal: $border-basic-color;
 $search-facet-summary-item-shadow: $border-gray;
-$search-facet-summary-clear-border-horizontal: $btn-red;
-$search-facet-summary-clear-color: $text-red;
-$search-facet-summary-clear-color-horizontal: $text-blue;
+$search-facet-summary-clear-border-horizontal: $btn-red; /* Henry Schein Red */
+$search-facet-summary-clear-color: $text-red; /* Henry Schein Red */
+$search-facet-summary-clear-color-horizontal: $text-blue; /* Henry Schein Blue */
 
 // Search Filter
-$search-filter-radius-active: $text-blue;
+$search-filter-radius-active: $text-blue; /* Henry Schein Blue */
 $search-filter-radius-border: $border-gray;
 $search-filter-radius-bg: $border-gray;
 
 // Search Filter Slider
 $search-filter-slider-border-active: $border-basic-color;
-$search-filter-slider-bg-active: $bg-blue;
+$search-filter-slider-bg-active: $bg-blue; /* Henry Schein Blue */
 $search-filter-slider-btn-border: $border-gray;
 $search-filter-slider-btn-bg: $bg-light-gray;
 $search-filter-slider-btn-bg-active: $bg-light-gray-active;
 
-// Serach Pagination
+// Search Pagination
 $search-pagination-bg: transparent;
-$search-pagination-active-bg: $bg-blue;
+$search-pagination-active-bg: $bg-blue; /* Henry Schein Blue */
 $search-pagination-active-color: $text-white;
-$search-pagination-hover-color: $text-blue;
+$search-pagination-hover-color: $text-blue; /* Henry Schein Blue */
 $search-pagination-hover-bg: $bg-submenu-active;
 $search-pagination-hover-border: $border-basic-active;
 
 // Search selector
-$serach-selector-variant-color-active: $text-blue-active;
+$serach-selector-variant-color-active: $text-blue-active; /* Henry Schein Blue */
 
 // Typehead
 $tt-color: $text-basic;
-$tt-color-active: $text-blue;
-$tt-price-color: $text-blue;
+$tt-color-active: $text-blue; /* Henry Schein Blue */
+$tt-price-color: $text-blue; /* Henry Schein Blue */
 $tt-dropdown-bg: $bg-light-gray;
 $tt-suggestion-bg-active: $bg-light-gray-active;
 $tt-dropdown-border: $border-gray;
