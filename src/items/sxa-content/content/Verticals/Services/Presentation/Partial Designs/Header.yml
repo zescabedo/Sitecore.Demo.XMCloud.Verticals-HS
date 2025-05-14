@@ -69,13 +69,25 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F0E320AC-2866-4B80-9F56-9E9F35675441}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B1D6FE21F-201B-46CF-9C5F-D73998E99F39%7D&amp;FieldNames=%7BD4C47A93-AC47-4B3F-B3C4-0177933D926A%7D&amp;Styles=%7B91B88E36-80C0-4522-A5DA-9FDC1B38C884%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7" />
+          </d>
+        </r>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "157161f2-8de3-459d-87ae-917d8f4bb60b"
+      Value: "321bcc10-2e0d-4c6a-adf5-84f408343e41"
 - Language: "fr-CA"
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "02ec3d7a-5902-40a8-ab8f-60ea5b89ed1c"
+      Value: "d2799313-2845-419d-b691-d8c38a2397f0"
